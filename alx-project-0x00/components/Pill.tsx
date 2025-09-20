@@ -1,10 +1,15 @@
+// File: components/Pill.tsx
+
 import { PillProps } from "@/interfaces";
-const Pill: React.FC = () => {
+import React from "react";
+
+// Accettiamo 'title' come prop e lo usiamo
+const Pill: React.FC<PillProps> = ({ title }) => {
   return (
     <div className=" flex justify-center  items-center bg-[#F9F9F9] px-3 w-auto h-[27px] rounded-full">
-      <p className=" text-sm ">Title</p>
+      <p className=" text-sm ">{title}</p>
     </div>
   )
 }
 
-export default Pill
+export default Pill;

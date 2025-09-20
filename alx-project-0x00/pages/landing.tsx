@@ -1,5 +1,7 @@
+// File: pages/landing.tsx
+
 import React from 'react';
-import Button from '@/components/Button'; // <-- MODIFICA 2
+import Button from '@/components/Button';
 
 const LandingPage = () => {
   return (
@@ -13,7 +15,7 @@ const LandingPage = () => {
       
       <Button 
         title="Medium Button" 
-        styles="bg-green-500 px-5 py-2 rounded-lg text-base" // <-- MODIFICA 1
+        styles="bg-green-500 px-5 py-2 rounded-lg text-base"
       />
       
       <Button 
