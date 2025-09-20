@@ -1,12 +1,11 @@
 import React from 'react';
-import Button from '../components/Button'; // Importiamo il nostro componente
+import Button from '@/components/Button'; // <-- MODIFICA 2
 
 const LandingPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-4">
       <h1 className="text-3xl font-bold mb-8">Test dei Pulsanti</h1>
       
-      {/* Istanze del componente Button con props diverse */}
       <Button 
         title="Small Button" 
         styles="bg-blue-500 px-3 py-1 rounded-sm text-sm" 
@@ -14,7 +13,7 @@ const LandingPage = () => {
       
       <Button 
         title="Medium Button" 
-        styles="bg-green-500 px-5 py-2 rounded-md text-base" 
+        styles="bg-green-500 px-5 py-2 rounded-lg text-base" // <-- MODIFICA 1
       />
       
       <Button 
